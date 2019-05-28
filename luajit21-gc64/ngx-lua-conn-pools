@@ -399,7 +399,7 @@ function print_pools_stat(pools) {
             pool_key = &$pool->key
             cache = &$pool->cache
             free = &$pool->free
-            active_cnt = $pool->active_connections
+            active_cnt = $pool->connections
             in_pool_cnt = queue_len(cache)
 
             printf("pool \\"%s\\"\\n", text_str(user_string(pool_key)))
